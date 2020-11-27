@@ -1,4 +1,4 @@
-# Android Java Apps Integration Practice
+# Android Java App Integration Practice
 <p float="left">
   <img src="/readmeFiles/1.png" width="200" />
   <img src="/readmeFiles/2.png" width="200" /> 

@@ -7,12 +7,101 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/pesoLb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Peso:"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/sexoLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Sexo (m/f):"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/pesoLb"
+        app:layout_constraintLeft_toLeftOf="@id/pesoLb"/>
+
+    <TextView
+        android:id="@+id/coposLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="N° copos:"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/sexoLb"
+        app:layout_constraintLeft_toLeftOf="@id/pesoLb"/>
+
+    <TextView
+        android:id="@+id/jejumLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="Está de jejum?\n(s/n)"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/coposLb"
+        app:layout_constraintLeft_toLeftOf="@id/pesoLb"/>
+
+    <EditText
+        android:id="@+id/pesoIn"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toTopOf="@id/pesoLb"
+        app:layout_constraintLeft_toRightOf="@id/pesoLb"/>
+
+    <EditText
+        android:id="@+id/sexoIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toTopOf="@id/sexoLb"
+        app:layout_constraintLeft_toRightOf="@id/sexoLb"/>
+
+    <EditText
+        android:id="@+id/coposIn"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toTopOf="@id/coposLb"
+        app:layout_constraintLeft_toRightOf="@id/coposLb"/>
+
+    <EditText
+        android:id="@+id/jejumIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toTopOf="@id/jejumLb"
+        app:layout_constraintLeft_toRightOf="@id/jejumLb"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Dados"
+        app:layout_constraintTop_toBottomOf="@id/jejumIn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="send"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

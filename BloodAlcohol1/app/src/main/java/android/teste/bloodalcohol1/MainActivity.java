@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void send(View v){
-        Intent it = new Intent(getBaseContext(), CalcActivity.class);
+        //Intent it = new Intent(getBaseContext(), CalcActivity.class);
+        Intent it = new Intent("CALCULAR_ALCOOLEMIA");
 
         EditText pesoEdit = findViewById(R.id.pesoIn);
         EditText sexoEdit = findViewById(R.id.sexoIn);
